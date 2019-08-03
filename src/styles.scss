@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+$azul_nova_claro: #048ABF;
+$azul_nova_black: #0367A6;
+$verde_nova: #9FBF2C;
+$rojo_nova: #F21B1B;
+$gris: #575757;
+
+.bg-img-primary {
+    height: 100vh;
+}
+
+.titulo-nova {
+    color: $azul_nova_black !important;
+    font-weight: bold;
+}
+
+.gris-nova {
+    color: #575757 !important;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 21px;
+}
+
+.button-verde {
+    background-color: $verde_nova;
+}
+
+.button-azul {
+    background-color: $azul_nova_claro;
+}
+
+.button-rojo {
+    background-color: $rojo_nova;
+}
+
+.servicios-size {
+    font-size: 55px;
+}
+
+.margin-atencion {
+    color: $azul_nova_claro;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: $azul_nova_claro;
+}
+
+.compu-style {
+    background-image: url('./assets/images/compu_nova.png');
+    background-size: auto 100%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.extra-azul {
+    background-color: $azul_nova_black;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    border-radius: 0 20px 20px 0;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo {
+  display: flex;  
+}
+
+.small-text {
+    font-size: 12px;
+    color: $gris;
+}
