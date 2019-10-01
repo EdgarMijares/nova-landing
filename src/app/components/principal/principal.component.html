@@ -3,7 +3,7 @@
   data-src="./assets/images/edificio.png" uk-img>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-10 col-md-4">
+      <div class="col-10 col-md-4" >
         <img src="./assets/logos/nova_color.png" class="img-fluid">
       </div>
     </div>
@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container " uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">
   <div class="row justify-content-center">
     <div class="col-6 col-md-4">
       <img class="img-fluid uk-align-center mb-3" src="./assets/icono/equipo.png" alt="">
@@ -45,7 +45,7 @@
     <div class="col-12 col-md-6 mt-3">
       <div class="uk-height-medium uk-flex uk-flex-center
         uk-flex-middle uk-background-cover uk-light"
-        data-src="./assets/images/cells.jpg" uk-img>
+        data-src="./assets/images/analisisclinico.png" uk-img>
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12 pb-3">
@@ -53,7 +53,7 @@
             </div>
             <div class="col-9">
               <p class="text-center m-0">
-                Realizamos mas de 350 estudios de 
+                Realizamos mas de 350 estudios de
                 rutina con la más alta tecnología.
               </p>
             </div>
@@ -65,16 +65,15 @@
     <div class="col-12 col-md-6 mt-3">
       <div class="uk-height-medium uk-flex uk-flex-center
         uk-flex-middle uk-background-cover uk-light"
-        data-src="./assets/images/cells.jpg" uk-img>
+        data-src="./assets/images/analisisclinicoesp.png" uk-img>
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12 pb-3">
-              <h3 class="text-center font-weight-bolder">Análisis Clínicos</h3>
+              <h3 class="text-center font-weight-bolder">Análisis Clínicos Especializados</h3>
             </div>
             <div class="col-9">
               <p class="text-center m-0">
-                Realizamos mas de 350 estudios de 
-                rutina con la más alta tecnología.
+                Convenio con los mejores laboratorios del país, para estudios de alta especialidad.
               </p>
             </div>
           </div>
@@ -85,7 +84,7 @@
     <div class="col-12 col-md-6 mt-3">
       <div class="uk-height-medium uk-flex uk-flex-center
         uk-flex-middle uk-background-cover uk-light"
-        data-src="./assets/images/cells.jpg" uk-img>
+        data-src="./assets/images/analisisclinicoesp.png" uk-img>
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12 pb-3">
@@ -108,7 +107,7 @@
     <div class="col-12 col-md-6 mt-3">
       <div class="uk-height-medium uk-flex uk-flex-center
         uk-flex-middle uk-background-cover uk-light"
-        data-src="./assets/images/cells.jpg" uk-img>
+        data-src="./assets/images/analisisclinico.png" uk-img>
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12 pb-3">
@@ -125,6 +124,11 @@
       </div>
     </div>
   </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <img class="img-fluid pt-5" src="./assets/images/hrs.png" alt="">
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid my-5 compu-style">
@@ -138,8 +142,8 @@
   </div>
   <div class="row">
     <div class="col-12 col-md-5">
-      <div class="row">
-        <div class="col-12">
+      <div class="row" uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">
+        <div class="col-12" >
           <img class="img-fluid p-sm-0 p-lg-4" src="./assets/images/resultados.png" alt="">
         </div>
       </div>
@@ -153,11 +157,11 @@
   </div>
   <div class="row">
     <div class="col-12 col-md-5 p-0">
-      <div class="extra-azul mt-4">
+      <div class="extra-azul mt-4 mr-5">
         Además puedes solicitarlos vía
       </div>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4" uk-parallax="blur: -10;">
       <div class="row justify-content-center">
         <div class="col-4 col-md-3">
           <img class="p-2 img-fluid" src="./assets/icono/whats.png" alt="">
@@ -179,37 +183,119 @@
 <div class="container-fluid">
   <h5 class="gris-nova font-weight-bolder servicios-size text-center mb-0">GALERÍA</h5>
   <h4 class="text-center gris-nova m-0">Conoce más sobre Laboratorio Nova en nuestra galeria.</h4>
-  <div class="row uk-height-large pt-5">
-    <div class="col-12 no-padding uk-height-large">
-      <div class="uk-position-relative uk-visible-toggle uk-light uk-height-large" tabindex="-1" uk-slideshow>
-        <ul class="uk-slideshow-items uk-height-large" style="min-height: 200px !important;">
-            <li class="uk-height-large">
-                <img class="" src="./assets/galeria/galeria1.jpg" alt="" uk-cover>
+  <div class="row pt-5">
+    <div class="col-12 no-padding">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 9:3; animation: scale">
+        <ul class="uk-slideshow-items">
+            <li>
+                <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
+                src="./assets/galeria/galeria1.jpg" alt="" uk-cover>
             </li>
-            <li class="uk-height-large">
-                <img class="" src="./assets/galeria/galeria2.jpg" alt="" uk-cover>
+            <li>
+                <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
+                src="./assets/galeria/galeria2.jpg" alt="" uk-cover>
             </li>
-            <li class="uk-height-large">
-                <img class="" src="./assets/galeria/galeria3.jpg" alt="" uk-cover>
+            <li>
+                <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
+                src="./assets/galeria/galeria3.jpg" alt="" uk-cover>
             </li>
-            <li class="uk-height-large">
-                <img class="" src="./assets/galeria/galeria4.jpg" alt="" uk-cover>
+            <li>
+                <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
+                src="./assets/galeria/galeria4.jpg" alt="" uk-cover>
             </li>
-            <li class="uk-height-large">
-                <img class="" src="./assets/galeria/galeria5.jpg" alt="" uk-cover>
+            <li>
+                <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
+                src="./assets/galeria/galeria5.jpg" alt="" uk-cover>
             </li>
-            <li class="uk-height-large">
-                <img class="" src="./assets/galeria/galeria6.png" alt="" uk-cover>
+            <li>
+                <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
+                src="./assets/galeria/galeria6.png" alt="" uk-cover>
             </li>
         </ul>
-    
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" 
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover"
           href="#" uk-slidenav-previous uk-slideshow-item="previous">
         </a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" 
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover"
           href="#" uk-slidenav-next uk-slideshow-item="next">
         </a>
       </div>
     </div>
   </div>
 </div>
+
+<app-video></app-video>
+
+<div class="container my-5">
+  <h5 class="gris-nova font-weight-bolder servicios-size text-center mb-0">BLOG</h5>
+  <h4 class="text-center gris-nova m-0">Entérate de lo último en tecnología diagnóstica, patologías, eventos y noticias relevantes.</h4>
+  <div class="row py-5">
+    <div class="col-12 col-md-6">
+      <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+          <img src="./assets/galeria/galeria3.jpg" alt="" uk-cover>
+          <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+          <div class="uk-card-body bg-azul">
+            <h3 class="uk-card-title font-weight-bolder text-white">Titulo</h3>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button class="button button-rojo col-12">Leer más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+          <img src="./assets/galeria/galeria3.jpg" alt="" uk-cover>
+          <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+          <div class="uk-card-body bg-azul">
+            <h3 class="uk-card-title font-weight-bolder text-white">Titulo</h3>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button class="button button-rojo col-12">Leer más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+          <img src="./assets/galeria/galeria3.jpg" alt="" uk-cover>
+          <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+          <div class="uk-card-body bg-azul">
+            <h3 class="uk-card-title font-weight-bolder text-white">Titulo</h3>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button class="button button-rojo col-12">Leer más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+          <img src="./assets/galeria/galeria3.jpg" alt="" uk-cover>
+          <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+          <div class="uk-card-body bg-azul">
+            <h3 class="uk-card-title font-weight-bolder text-white">Titulo</h3>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button class="button button-rojo col-12">Leer más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-md-4">
+      <button class="button button-rojo col-12">SUSCRIBIRSE</button>
+    </div>
+  </div>
+</div>
+
+<app-contacto></app-contacto>

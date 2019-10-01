@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6 no-padding">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4333.743646397987!2d-104.65793993698972!3d24.022970969715352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bd3f47c23c2f%3A0xa948eb2fa785f99b!2sLaboratorio%20de%20Analisis%20Clinicos%20Nova!5e0!3m2!1ses-419!2smx!4v1569443921065!5m2!1ses-419!2smx" class="col-12" height="450" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    <div class="col-12 col-md-6 ">
+      <h5 class="gris-nova font-weight-bolder servicios-size mb-0">CONTACTO</h5>
+      <h4 class="gris-nova m-0 mb-3">Estamos cerca de ti.</h4>
+      <div class="row">
+        <form (ngSubmit)="sendContacto(contacto)" #contacto="ngForm" class="col-8">
+          <input name="name" ngModel class=" input" type="text" placeholder="Nombre:*">
+          <input name="email" ngModel class=" input" type="text" placeholder="email:*">
+          <textarea name="msn" ngModel class=" input" placeholder="Mensaje:*"></textarea>
+          <button class="button button-verde col-5">ENVIAR</button>
+          <a class="center-text col-7" href="mailto:labnova@prodigy.net.mx">labnova@prodigy.net.mx</a>
+        </form>
+      </div>
+      <div class="row">
+        <h6 class="gris-nova my-3 col-12">TOMAS DE MUESTRA</h6>
+        <div class="col-6 gris-nova">
+          <small>
+            <p><strong>Matríz</strong><br>Av. Cuauhtémoc #609 Sur, Zona Centro C.P. 34000, Durango, Dgo.</p>
+          </small>
+        </div>
+        <div class="col-6">
+          <small>
+            <p>(618) 811 72 30 <br>(618) 825 30 19 <br><span style="color: red; font-weight: bold;">(618) 175 30 34 (Urgencias)</span></p>
+          </small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 gris-nova">
+          <small>
+            <p><strong>Punto Guadiana</strong><br>Paseo Loma Dorada, Planta baja, Av. Paseo Loma Bonita C.P. 34104, Durango, Dgo.</p>
+          </small>
+        </div>
+        <div class="col-6">
+          <small>
+            <p>(618) 884 29 13</p>
+          </small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 gris-nova">
+          <small>
+            <p><strong>Felipe Ángeles</strong><br>Felipe Ángeles (Esquina con Héroes de chapultepec), Guadalupe Victoria, Dgo.</p>
+          </small>
+        </div>
+        <div class="col-6">
+          <small>
+            <p>(676) 108 67 20</p>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
