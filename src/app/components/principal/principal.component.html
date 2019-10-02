@@ -38,7 +38,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="servicios">
   <h5 class="gris-nova font-weight-bolder servicios-size text-center mb-0">SERVICIOS</h5>
   <h4 class="text-center gris-nova m-0">Ponemos a tus órdenes lo mejor de nosotros</h4>
   <div class="row mt-4">
@@ -150,8 +150,8 @@
     </div>
     <div class="col-12 col-md-4 p-3 padre">
       <div class="row hijo">
-        <button class="button button-azul col-12 my-2" href="">VER TUTORIAL</button>
-        <button class="button button-rojo col-12 my-2" href="">CONSULTAR</button>
+        <a class="button button-azul col-12 my-2" target="_blank" href="https://www.youtube.com/watch?v=y6bqXH-lYBo">VER TUTORIAL</a>
+        <a class="button button-rojo col-12 my-2" target="_blank" href="http://189.197.184.182:9090/EclipseWeb/login">CONSULTAR</a>
       </div>
     </div>
   </div>
@@ -185,7 +185,7 @@
   <h4 class="text-center gris-nova m-0">Conoce más sobre Laboratorio Nova en nuestra galeria.</h4>
   <div class="row pt-5">
     <div class="col-12 no-padding">
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 9:3; animation: scale">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 9:3; animation: scale; autoplay: true;">
         <ul class="uk-slideshow-items">
             <li>
                 <img class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left"
@@ -292,10 +292,11 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-8 col-md-4">
-      <button class="button button-rojo col-12">SUSCRIBIRSE</button>
-    </div>
+    <!-- <div class="col-12 col-sm-8 col-md-4"> -->
+      <div class="g-ytsubscribe" data-channelid="UCp9wwNw9sUZSTp9JPfteTFw" data-layout="full" data-count="hidden"></div>
+      <!-- <a href="http://www.youtube.com/subscription_center?add_user=UCp9wwNw9sUZSTp9JPfteTFw" class="button button-rojo col-12">SUSCRIBIRSE</a> -->
+    <!-- </div> -->
   </div>
 </div>
 
-<app-contacto></app-contacto>
+<app-contacto id="contacto"></app-contacto>

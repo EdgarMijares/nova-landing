@@ -12,7 +12,7 @@
     $company=$request->subject;
     $text=$request->msn;
 
-    $send_to = "lolovive2@gmail.com";
+    $send_to = "labnova@prodigy.net.mx";
     $from = "labnova@prodigy.net.mx";
     $body='
     <html>

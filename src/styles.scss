@@ -24,6 +24,19 @@ $gris: #575757;
     height: 100vh;
 }
 
+.em-triple {
+  font-size: 3em;
+}
+
+.em-cuatruple {
+  font-size: 4em;
+}
+
+
+
+.shadow-title {
+  text-shadow: 2px 2px 2px #fff;
+}
 .titulo-nova {
     color: $azul_nova_black !important;
     font-weight: bold;
@@ -34,37 +47,43 @@ $gris: #575757;
 }
 
 .gris-nova {
-    color: #575757 !important;
+  color: #575757 !important;
 }
 
 .button {
-    border: none;
-    color: white;
-    padding: 5px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 21px;
+  border: none;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 21px;
 }
 
 .button-verde {
-    background-color: $verde_nova;
+  background-color: $verde_nova;
 }
 
 .button-azul {
-    background-color: $azul_nova_claro;
+  background-color: $azul_nova_claro;
+	color: #fff !important;
+  &:hover {
+    background-color: rgba($azul_nova_claro, .8);
+    text-decoration: none;
+  }
 }
 
 .button-rojo {
-    background-color: $rojo_nova;
+  background-color: $rojo_nova;
 	transition: .3s;
 	color: #fff !important;
-    &:hover {
-      background-color: rgba($rojo_nova, .8);
-    }
+  &:hover {
+    background-color: rgba($rojo_nova, .8);
+    text-decoration: none;
+  }
 }
 
 .servicios-size {
