@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class VideoComponent implements OnInit {
+
   playlist = [{
     url_video: 'mwiPi_U1T0s',
     url_image: './assets/youtube/laboratorio.jpg',
@@ -36,9 +37,15 @@ export class VideoComponent implements OnInit {
   }, {
     url_video: '4Ef3lW3IHM4',
     url_image: './assets/youtube/alzheimer.jpg',
-  }, ];
+  }];
+
+  videoSelect: string = this.playlist[0].url_video;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  videoClip(seleccion: number) {
+    this.videoSelect = this.playlist[seleccion].url_video;
   }
 }

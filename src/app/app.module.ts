@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { VideoComponent } from './components/video/video.component';
 
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { VideoComponent } from './components/video/video.component';
     NavbarComponent,
     FooterComponent,
     ContactoComponent,
-    VideoComponent
+    VideoComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
