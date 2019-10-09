@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 
+import { AppRoutingModule } from './app.router';
+
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,6 +13,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { VideoComponent } from './components/video/video.component';
 
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { BlogComponent } from './components/blog/blog.component';
+import { NostrosComponent } from './components/nostros/nostros.component';
+import { VerComponent } from './components/blog/ver/ver.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +25,13 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
     FooterComponent,
     ContactoComponent,
     VideoComponent,
-    DomseguroPipe
+    DomseguroPipe,
+    BlogComponent,
+    NostrosComponent,
+    VerComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpClientModule

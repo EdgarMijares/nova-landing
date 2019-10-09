@@ -32,11 +32,10 @@ $gris: #575757;
   font-size: 4em;
 }
 
-
-
 .shadow-title {
   text-shadow: 2px 2px 2px #fff;
 }
+
 .titulo-nova {
     color: $azul_nova_black !important;
     font-weight: bold;
@@ -65,6 +64,7 @@ $gris: #575757;
 
 .button-verde {
   background-color: $verde_nova;
+  color: #fff !important;
 }
 
 .button-azul {
@@ -103,19 +103,19 @@ $gris: #575757;
 }
 
 .margin-atencion {
-    color: $azul_nova_claro;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 2px;
-    border-style: solid;
-    border-color: $azul_nova_claro;
+  color: $azul_nova_claro;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px;
+  border-style: solid;
+  border-color: $azul_nova_claro;
 }
 
 .compu-style {
-    background-image: url('./assets/images/compu_nova.png');
-    background-size: auto 100%;
-    background-position-x: right;
-    background-repeat: no-repeat;
+  background-image: url('./assets/images/compu_nova.png');
+  background-size: auto 100%;
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
 
 .rojo-matraz {
@@ -126,26 +126,26 @@ $gris: #575757;
 }
 
 .extra-azul {
-    background-color: $azul_nova_black;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 20px;
-    text-align: right;
-    border-radius: 0 20px 20px 0;
+  background-color: $azul_nova_black;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  text-align: right;
+  border-radius: 0 20px 20px 0;
 }
 
 .no-padding {
-    padding: 0px !important;
+  padding: 0px !important;
 }
 
 .padre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hijo {
@@ -153,8 +153,14 @@ $gris: #575757;
 }
 
 .small-text {
-    font-size: 12px;
-    color: $gris;
+  font-size: 12px;
+  color: $gris;
+}
+
+.fab {
+  font-size: 1.5em;
+  padding: 0 10px;
+  color: $azul_nova_black;
 }
 
 .input {
@@ -170,6 +176,12 @@ $gris: #575757;
   color: $azul_nova_claro !important;
 }
 
+.card-title {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
 .hs-responsive-embed { 
 	position: relative; 
   height: 0; 
@@ -182,19 +194,19 @@ $gris: #575757;
   .hs-responsive-embed iframe, 
   .hs-responsive-embed object, 
   .hs-responsive-embed embed { 
-   position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100% !important; 
-  height: 100% !important; 
-  border: 0; 
-   } 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100% !important; 
+    height: 100% !important; 
+    border: 0; 
+  } 
   
   .hs-responsive-embed, 
   .hs-responsive-embed.hs-responsive-embed-youtube, 
   .hs-responsive-embed.hs-responsive-embed-wistia, 
   .hs-responsive-embed.hs-responsive-embed-vimeo { 
-   padding-bottom: 56.25%; 
+    padding-bottom: 56.25%; 
   } 
 
 // .video-container {
