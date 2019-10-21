@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ObtenerService } from '../../services/obtener.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  public articulos: any[] = [];
+
+  constructor(public obtener: ObtenerService,
+              public router: Router) { }
 
   ngOnInit() {
+    this.obtener.getArticulos().subscribe(articulos => {
+      this.articulos = articulos;
+      console.log(articulos);
+    });
   }
 
 }

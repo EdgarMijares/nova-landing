@@ -13,6 +13,6 @@ export class BlogService {
   getPost() {
     this.http.get(`${this.URL_SERVICE}/nova/blog.json`).subscribe( blog => {
       console.log(blog);
-    })
+    });
   }
 }
