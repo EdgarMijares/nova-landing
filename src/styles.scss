@@ -235,7 +235,7 @@ $gris: #575757;
 // MENU
 .ratio-16-9 {
     width: 100%;
-    padding-top: 40%;
+    padding-top: 20%;
     position: relative;
     background-size: cover;
     background-position: center center;
@@ -377,6 +377,15 @@ header nav ul li .caret {
     }
     header nav ul li .caret {
         float: right;
+    }
+
+    .ratio-16-9 {
+        width: 100%;
+        padding-top: 45%;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
