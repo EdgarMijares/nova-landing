@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { NostrosComponent } from './components/nostros/nostros.component';
 import { VerComponent } from './components/blog/ver/ver.component';
+import { CotizadorComponent } from './components/cotizador/cotizador.component';
 
 const routes: Routes = [
     { path: '', component: PrincipalComponent },
     { path: 'nosotros', component: NostrosComponent },
     { path: 'blog', component: BlogComponent },
     { path: 'blog/:id', component: VerComponent },
+    { path: 'cotizador', component: CotizadorComponent },
     { path: '**', pathMatch: 'full', redirectTo: '/' }
 ];
 

@@ -142,6 +142,33 @@ $gris: #575757;
     border-radius: 0 20px 20px 0;
 }
 
+.name-treatment {
+    font-size: .7em;
+}
+
+.text-blue {
+    color: $azul_nova_black;
+}
+
+.button-add {
+    border: 0px;
+    font-weight: bold;
+    background-color: #575757;
+    font-size: 15px;
+    color: #fff;
+}
+
+.add-title {
+    color: #575757;
+    font-size: 11px;
+    margin: 0px 5px;
+    font-weight: bold;
+}
+
+.full-height {
+    min-height: calc(100vh - 350px) !important;
+}
+
 .card-size {
     min-height: 300px !important;
 }

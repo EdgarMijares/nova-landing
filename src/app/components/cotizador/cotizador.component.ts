@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CotizadorComponent implements OnInit {
 
+  nombre = '';
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  setNameClient( nombre: string = '' ) {
+    this.nombre = nombre.toUpperCase();
   }
 
 }
