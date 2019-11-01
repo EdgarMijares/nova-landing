@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ObtenerService } from '../../../services/obtener.service';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
+import { SeoService } from '../../../services/seo.service';
 
 @Component({
   selector: 'app-ver',
@@ -25,6 +26,7 @@ export class VerComponent implements OnInit {
 
   constructor(private obtener: ObtenerService,
               public sanitizer: DomSanitizer,
+              public seo: SeoService,
               private active: ActivatedRoute) {
     this.ID_BLOG = this.active.snapshot.paramMap.get('id');
   }
@@ -34,8 +36,12 @@ export class VerComponent implements OnInit {
       this.articulos = [];
       this.obtener.getArticulo(url.id)
       .subscribe( (data: any) => {
-        console.log(data);
         this.blogContent = data;
+        this.seo.createTags({
+          title: this.blogContent.titulo,
+          image: this.blogContent.imagen,
+          slug: `blog/${ url.id }`
+        });
       });
       this.obtener.getArticulos().subscribe( (articulos: any[]) => {
         for (let i = 0; i < articulos.length; i++) {

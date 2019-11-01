@@ -10,11 +10,9 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  
-    var contador = 1;
-      
-    $('.menu_bar').click(function(){
-      if (contador == 1) {
+    let contador = 1;
+    $('.menu_bar').click(function() {
+      if (contador === 1) {
         $('nav').animate({
           left: '0'
         });

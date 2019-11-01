@@ -21,6 +21,7 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { BlogComponent } from './components/blog/blog.component';
 import { NostrosComponent } from './components/nostros/nostros.component';
 import { VerComponent } from './components/blog/ver/ver.component';
+import { CotizadorComponent } from './components/cotizador/cotizador.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { VerComponent } from './components/blog/ver/ver.component';
     DomseguroPipe,
     BlogComponent,
     NostrosComponent,
-    VerComponent
+    VerComponent,
+    CotizadorComponent
   ],
   imports: [
     AppRoutingModule,
