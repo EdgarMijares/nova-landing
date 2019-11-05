@@ -150,6 +150,27 @@ $gris: #575757;
     color: $azul_nova_black;
 }
 
+.parse-html-text {
+    margin-bottom: 15px;
+    *,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-size: 13px;
+        font-weight: normal;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+    br {
+        display: none;
+    }
+}
+
 .button-add {
     border: 0px;
     font-weight: bold;

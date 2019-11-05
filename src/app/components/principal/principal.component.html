@@ -240,7 +240,7 @@
                 <div>
                     <div class="uk-card-body bg-azul">
                         <h3 class="uk-card-title font-weight-bolder text-white">{{ articulo.titulo }}</h3>
-                        <div class="text-white" [innerHTML]="sanitizer.bypassSecurityTrustHtml(articulo.editor | slice:0:100)"></div>
+                        <div class="text-white parse-html-text" [innerHTML]="sanitizer.bypassSecurityTrustHtml(articulo.editor | slice:0:100)"></div>
                         <button [routerLink]="['/blog', articulo.id]" class="button button-rojo col-12">Leer más</button>
                     </div>
                 </div>
