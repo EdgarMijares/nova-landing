@@ -55,6 +55,10 @@ export class CotizadorComponent implements OnInit {
     pdfMake.createPdf(this.disenoPDF()).open();
   }
 
+  imprimirPdf(){
+    pdfMake.createPdf(this.disenoPDF()).print();
+  }
+
   getArrayListPDF(data, columns) {
     let cuerpo = [];
     cuerpo.push(columns)
@@ -80,7 +84,7 @@ export class CotizadorComponent implements OnInit {
 
   disenoPDF() {
     return {
-      pageSize: 'A5',
+      pageSize: 'LETTER',
       pageOrientation: 'landscape',
       pageMargins: [ 40, 60, 40, 60 ],
       content: [{
