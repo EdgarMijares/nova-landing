@@ -1,13 +1,21 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { pipe } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ObtenerService {
 
-  constructor(private angularStorage: AngularFirestore) { }
+  private URL_ESTUDIOS: string = `https://other-services-dos17.firebaseio.com/nova/cotizador.json`;
+  private estudios: [] = [];
+
+  constructor(private angularStorage: AngularFirestore,
+              private http: HttpClient) {
+                
+              }
 
   getArticulos(status = 'active') {
     return this.angularStorage.collection('nova',
@@ -34,5 +42,9 @@ export class ObtenerService {
 
   changeSpace( text: string ) {
     return (text) ? text.replace(/ /g, '_').toLowerCase() : '';
+  }
+
+  getEstudiosArray() {
+    return this.http.get<any[]>(this.URL_ESTUDIOS);
   }
 }
