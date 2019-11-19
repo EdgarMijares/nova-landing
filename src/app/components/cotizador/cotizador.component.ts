@@ -25,7 +25,7 @@ export class CotizadorComponent implements OnInit {
     this.obtener.getEstudiosArray().subscribe( (estudios: []) => {
       this.estudios = estudios;
     }, (error) => {
-      console.log(error)
+      console.log(error);
     });
   }
 
@@ -34,12 +34,19 @@ export class CotizadorComponent implements OnInit {
   }
 
   filterByName( param: string ) {
-    if (param) {
-      this.estudiosFilter = this.estudios.filter( (estudio: any) => estudio.nombre.localeCompare(param.toUpperCase()))
+    if ( param ) {
+      this.estudiosFilter = this.estudios.filter( (estudio: any) => {
+        return this.getStringLimpio(estudio.nombre).includes(this.getStringLimpio(param.toUpperCase()));
+      });
     } else {
       this.estudiosFilter = [];
     }
   }
+
+  getStringLimpio( cadena: string ): string {
+    return cadena.normalize('NFD').replace(/([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi, '$1')
+    .normalize();
+ }
 
   agregarEstudio( estudio: any ) {
     this.costoEstudios += estudio.precio;
@@ -47,27 +54,27 @@ export class CotizadorComponent implements OnInit {
   }
 
   removerEstudio( id_estudio: number ) {
-    this.costoEstudios -= this.estudiosSeleccionados.filter( estudio => {return estudio.id_estudio === id_estudio} )[0].precio;
-    this.estudiosSeleccionados = this.estudiosSeleccionados.filter( estudio => {return estudio.id_estudio !== id_estudio} );
+    this.costoEstudios -= this.estudiosSeleccionados.filter( estudio => { estudio.id_estudio === id_estudio } )[0].precio;
+    this.estudiosSeleccionados = this.estudiosSeleccionados.filter( estudio => { estudio.id_estudio !== id_estudio } );
   }
 
-  crearPdf(){
+  crearPdf() {
     pdfMake.createPdf(this.disenoPDF()).open();
   }
 
-  imprimirPdf(){
+  imprimirPdf() {
     pdfMake.createPdf(this.disenoPDF()).print();
   }
 
   getArrayListPDF(data, columns) {
-    let cuerpo = [];
-    cuerpo.push(columns)
+    const cuerpo = [];
+    cuerpo.push(columns);
     for (let i = 0; i < data.length; i++) {
-      let dataRow = [];
-      dataRow.push(data[i].nombre)
-      dataRow.push(data[i].condiciones)
-      dataRow.push({ text: `$${data[i].precio}`, alignment: 'center'})
-      cuerpo.push(dataRow)
+      const dataRow = [];
+      dataRow.push(data[i].nombre);
+      dataRow.push(data[i].condiciones);
+      dataRow.push({ text: `$${data[i].precio}`, alignment: 'center'});
+      cuerpo.push(dataRow);
     }
     return cuerpo;
   }
